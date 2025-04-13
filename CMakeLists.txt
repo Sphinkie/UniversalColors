@@ -31,6 +31,7 @@ qt_add_qml_module(appUniversalColors
     QML_FILES Qml/Vues/Separator.ui.qml
     QML_FILES Qml/Vues/ColorName.qml
     QML_FILES Qml/Vues/Echantillon.qml
+    QML_FILES Qml/Controllers/Screenshot.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

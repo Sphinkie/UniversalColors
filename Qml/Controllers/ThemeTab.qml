@@ -9,6 +9,9 @@ import "../Vues"
  */
 ThemeTabForm {
 
+    // Les touches du clavier sont forwardées vers le Gestionnaire
+    Keys.forwardTo: [screenshot]
+
     combobox_theme.onActivated: {
         window.Universal.theme = combobox_theme.currentText
         tabbedPage.theme = "-" + combobox_theme.currentText.toLowerCase()

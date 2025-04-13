@@ -6,6 +6,9 @@ ColorsTabForm {
 
     id: colorsTab
 
+    // Les touches du clavier sont forwardées vers le Gestionnaire
+    Keys.forwardTo: [screenshot]
+
     // checkbox Use Background
     color: checkBox.checked ? Universal.background : Universal.chromeLowColor
     checkBox.onClicked: tabbedPage.bg = checkBox.checked ? "-bg" : ""
