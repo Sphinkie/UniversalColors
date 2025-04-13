@@ -11,7 +11,7 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: 6
         columns: 2
-
+        //-----------------------------------------------------------------------
         CheckBox {
             id: checkBox
             text: qsTr("Show Background")
@@ -24,203 +24,46 @@ Rectangle {
             checked: false
         }
         //-----------------------------------------------------------------------
-        Rectangle {
-            id: separator_1
-            Layout.columnSpan: 2
-            color: "grey"
-            Layout.fillWidth: true
-            height: 2
-        }
+        Separator {}
         //-----------------------------------------------------------------------
-        Text {
+        ColorName {
             text: "chromeBlackHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
-            border.color: "black"
+        Echantillon {
             color: Universal.chromeBlackHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-
-        Text {
+        ColorName {
             text: "chromeBlackMediumColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
-            border.color: "black"
+        Echantillon {
             color: Universal.chromeBlackMediumColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "chromeBlackMediumLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
-            border.color: "black"
+        Echantillon {
             color: Universal.chromeBlackMediumLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-
-        Text {
+        ColorName {
             text: "chromeBlackLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
-            border.color: "black"
+        Echantillon {
             color: Universal.chromeBlackLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
         //-----------------------------------------------------------------------
-        Rectangle {
-            id: separator_2
-            Layout.columnSpan: 2
-            color: "grey"
-            Layout.fillWidth: true
-            height: 2
-        }
+        Separator {}
         //-----------------------------------------------------------------------
-        Text {
+        ColorName {
             text: "chromeWhiteColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.chromeWhiteColor
-            border.color: "black"
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-
-        //-----------------------------------------------------------------------
-        Rectangle {
-            id: separator_3
-            Layout.columnSpan: 2
-            color: "grey"
-            Layout.fillWidth: true
-            height: 2
         }
         //-----------------------------------------------------------------------
-        Text {
-            text: "chromeHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Text {
-            text: "chromeMediumColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeMediumColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Text {
-            text: "chromeMediumLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeMediumLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Text {
-            text: "chromeLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
+        Separator {}
         //-----------------------------------------------------------------------
-        Rectangle {
-            id: separator_4
-            Layout.columnSpan: 2
-            color: "grey"
-            Layout.fillWidth: true
-            height: 2
-        }
-
-        Text {
-            text: "chromeAltLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeAltLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+        Label {
+            text: qsTr("Press Space to save a screenshot")
         }
     }
 }

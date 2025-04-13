@@ -29,6 +29,8 @@ qt_add_qml_module(appUniversalColors
     QML_FILES Qml/Controllers/ChromeBwTab.qml
     QML_FILES Qml/Vues/ChromeBwTabForm.ui.qml
     QML_FILES Qml/Vues/Separator.ui.qml
+    QML_FILES Qml/Vues/ColorName.qml
+    QML_FILES Qml/Vues/Echantillon.qml
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.

@@ -11,7 +11,7 @@ Window {
     minimumWidth: 380
     minimumHeight: 600
     visible: true
-    title: "Universal Colors by Sphinkie"
+    title: "Universal Colors... by Sphinkie"
 
     // ----------------------------------------------------------------
     // Initialisation des couleurs
@@ -20,6 +20,8 @@ Window {
     Universal.background: Universal.Green
     Universal.foreground: Universal.Amber
     Universal.accent: Universal.Orange
+    // ----------------------------------------------------------------
+    color: Universal.chromeLowColor
 
     // ----------------------------------------------------------------
     // Page principale
@@ -28,6 +30,8 @@ Window {
         id: column
         anchors.top: parent.top
         anchors.fill: parent
+        spacing: 0
+
         // ----------------------------------------------------------------
         // Barre de titre
         // ----------------------------------------------------------------
@@ -35,7 +39,7 @@ Window {
             Layout.fillWidth: true
             Label {
                 id: titlebar
-                text: "Universal Colors by Sphinkie"
+                text: "Universal Colors"
             }
         }
         // ----------------------------------------------------------------
@@ -46,7 +50,6 @@ Window {
             width: parent.width
             Layout.preferredHeight: 50
             Layout.fillWidth: true
-            Layout.topMargin: 0
 
             TabBar {
                 id: tabBar

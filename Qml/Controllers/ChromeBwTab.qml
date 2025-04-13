@@ -6,10 +6,8 @@ ChromeBwTabForm {
 
     id: chromeBwTab
 
-    // checkbox useBackground
-    checkBox.onClicked: {
-        chromeTab.color = checkBox.checked ? Universal.background : Universal.chromeLowColor
-    }
+    // checkbox: Use Background
+    color: checkBox.checked ? Universal.background : Universal.chromeLowColor
 
     // Limité à lapage courante et ses enfants
     switchbutton.onClicked: {

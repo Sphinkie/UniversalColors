@@ -23,20 +23,15 @@ Rectangle {
             text: qsTr("Dark mode")
             checked: false
         }
-
+        //-----------------------------------------------------------------------
+        Separator {}
+        //-----------------------------------------------------------------------
         Text {
-            id: _text
-            text: qsTr("Text")
-            anchors.leftMargin: 0
-            font.pixelSize: 12
-            width: 100
+            text: "Text"
         }
         TextEdit {
             id: textEdit
-            width: 100
-            height: 20
-            text: qsTr("Text Edit")
-            font.pixelSize: 12
+            text: "Text Edit"
         }
         TextInput {
             id: textInput
@@ -47,31 +42,36 @@ Rectangle {
         }
         Label {
             id: label
-            text: qsTr("Label")
+            text: "Label"
         }
         TextArea {
             id: textArea
-            width: 100
-            height: 20
-            placeholderText: qsTr("Text Area")
+            placeholderText: "Text Area"
         }
-
         TextField {
             id: textField
-            width: 100
-            height: 20
             placeholderText: qsTr("Text Field")
         }
-
+        Button {
+            id: button_low
+            text: "Button"
+        }
+        Button {
+            id: button_hi
+            text: qsTr("Highlighted Button")
+            highlighted: true
+        }
         Pane {
             Button {
                 id: paned_button
                 text: qsTr("Button with Pane")
             }
         }
-        Button {
-            id: button
-            text: qsTr("Button")
+        Pane {
+            Label {
+                id: paned_label
+                text: "Label with Pane"
+            }
         }
         Row {
             RoundButton {
@@ -92,19 +92,32 @@ Rectangle {
                 leftPadding: 12
             }
         }
-
-        Dial {
-            id: dial
+        Row {
+            id: row
+            Dial {
+                id: dial
+                value: 0.5
+            }
+            Label {
+                text: "Dial"
+                leftPadding: 12
+                anchors.verticalCenter: parent.verticalCenter
+            }
         }
-
-        Tumbler {
-            id: tumbler
-            model: 10
+        Row {
+            Tumbler {
+                id: tumbler
+                model: 10
+            }
+            Label {
+                text: "Tumbler"
+                leftPadding: 12
+                anchors.verticalCenter: parent.verticalCenter
+            }
         }
-
         Slider {
             id: slider
-            value: 0.5
+            value: dial.value
         }
         ProgressBar {
             id: progressBar
@@ -113,81 +126,18 @@ Rectangle {
 
         RadioButton {
             id: radioButton1
-            text: qsTr("Radio Button")
+            text: "Radio Button"
             checked: true
         }
         RadioButton {
             id: radioButton2
-            text: qsTr("Radio Button")
+            text: "Radio Button"
         }
-        Text {
-            text: "chromeDisabledHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            font.italic: true
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeDisabledHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Text {
-            text: "chromeDisabledLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            font.italic: true
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.chromeDisabledLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        // -----------------------------------------
-        Text {
-            text: "listLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            font.italic: true
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.listLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Text {
-            text: "listMediumColor "
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            font.italic: true
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
-        }
-        Rectangle {
-            width: 200
-            border.color: "black"
-            color: Universal.listMediumColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+        //-----------------------------------------------------------------------
+        Separator {}
+        //-----------------------------------------------------------------------
+        Label {
+            text: qsTr("Press Space to save a screenshot")
         }
     }
 }

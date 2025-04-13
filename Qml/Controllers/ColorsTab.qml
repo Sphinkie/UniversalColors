@@ -6,10 +6,8 @@ ColorsTabForm {
 
     id: colorsTab
 
-    // checkbox useBackground
-    checkBox.onClicked: {
-        colorsTab.color = checkBox.checked ? Universal.background : Universal.altHighColor
-    }
+    // checkbox Use Background
+    color: checkBox.checked ? Universal.background : Universal.chromeLowColor
 
     switchbutton.onClicked: {
         if (switchbutton.checked)

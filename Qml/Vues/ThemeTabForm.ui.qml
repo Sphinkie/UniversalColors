@@ -143,5 +143,11 @@ Item {
             Layout.fillWidth: true
             Layout.columnSpan: 2
         }
+        //-----------------------------------------------------------------------
+        Separator {}
+        //-----------------------------------------------------------------------
+        Label {
+            text: qsTr("Press Space to save a screenshot")
+        }
     }
 }

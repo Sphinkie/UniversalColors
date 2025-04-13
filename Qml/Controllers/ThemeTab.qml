@@ -2,9 +2,11 @@ import QtQuick
 import QtQuick.Controls.Universal
 import "../Vues"
 
-// Possibilité de modifier les couleurs du thème
-// TODO: on n'arrive pas à affecter la valeur 'Universal' de la couleur, mais uniquement sa valeur 'texte'...
-// The value is propagated to children.
+
+/*
+ * Possibilité de modifier les couleurs du thème
+ * The value is propagated to children.
+ */
 ThemeTabForm {
 
     combobox_theme.onActivated: {

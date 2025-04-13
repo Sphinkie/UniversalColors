@@ -12,183 +12,91 @@ Rectangle {
         anchors.fill: parent
         anchors.margins: 6
         columns: 2
-
+        //-----------------------------------------------------------------------
         CheckBox {
             id: checkBox
             text: qsTr("Show Background")
             checked: false
         }
-
         Switch {
             id: switchbutton
             text: qsTr("Dark mode")
             checked: false
         }
-        Text {
+        //-----------------------------------------------------------------------
+        Separator {}
+        //-----------------------------------------------------------------------
+        ColorName {
             text: "altHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.altHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "altMediumHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.altMediumHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "altMediumColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.altMediumColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "altMediumLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.altMediumLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "altLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.altLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "background"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            font.bold: true
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.background
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "baseLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.baseLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "baseMediumLowColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.baseMediumLowColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "baseMediumColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.baseMediumColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "baseMediumHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.baseMediumHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "baseHighColor"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillHeight: true
-            Layout.fillWidth: true
         }
-        Rectangle {
-            width: 200
+        Echantillon {
             color: Universal.baseHighColor
-            Layout.fillHeight: true
-            Layout.fillWidth: true
+        }
+        //-----------------------------------------------------------------------
+        Separator {}
+        //-----------------------------------------------------------------------
+        Label {
+            text: qsTr("Press Space to save a screenshot")
         }
     }
 }
