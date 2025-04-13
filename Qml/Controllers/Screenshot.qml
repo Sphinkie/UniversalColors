@@ -12,6 +12,8 @@ Item {
                               filename += tabbedPage.col_fg
                               filename += tabbedPage.col_ac
                               filename += "-"
+                              filename += tabbedPage.currentIndex + 1
+                              filename += "-"
                               filename += tabBar.currentItem.objectName
                               filename += tabbedPage.theme
                               filename += tabbedPage.bg
