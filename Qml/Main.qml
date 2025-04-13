@@ -39,10 +39,23 @@ Window {
         // Barre de titre
         // ----------------------------------------------------------------
         Pane {
+            FontLoader {
+                id: titlefont
+                // source: "qrc:/Fonts/13_Misa.ttf"
+                // source: "qrc:/Fonts/Hourglass.ttf"
+                // source: "qrc:/Fonts/OrionPax.otf"
+                // source: "qrc:/Fonts/Ericsson_GA628.ttf"
+                source: "qrc:/Fonts/Vectroid.otf"
+            }
+
             Layout.fillWidth: true
             Label {
                 id: titlebar
                 text: "Universal Colors"
+                font.family: titlefont.font.family
+                font.weight: titlefont.font.weight
+                font.styleName: titlefont.font.styleName
+                font.pixelSize: 48
             }
         }
         Rectangle {

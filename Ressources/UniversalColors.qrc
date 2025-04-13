@@ -1,0 +1,9 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Fonts/OrionPax.otf</file>
+        <file>Fonts/13_Misa.ttf</file>
+        <file>Fonts/Hourglass.ttf</file>
+        <file>Fonts/Ericsson_GA628.ttf</file>
+        <file>Fonts/Vectroid.otf</file>
+    </qresource>
+</RCC>

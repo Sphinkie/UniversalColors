@@ -4,6 +4,8 @@ project(UniversalColors VERSION 0.1 LANGUAGES CXX)
 
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
+set(CMAKE_AUTORCC ON)   # Auto use QRC resource File
+
 find_package(Qt6 REQUIRED COMPONENTS Quick)
 
 qt_standard_project_setup(REQUIRES 6.5)
@@ -16,12 +18,15 @@ qt_add_qml_module(appUniversalColors
     URI UniversalColors
     VERSION 1.0
     SOURCES Sources/main.cpp
+    RESOURCES Ressources/UniversalColors.qrc
+
     QML_FILES Qml/Main.qml
     QML_FILES Qml/Controllers/ColorsTab.qml
     QML_FILES Qml/Controllers/ChromeTab.qml
     QML_FILES Qml/Controllers/ThemeTab.qml
     QML_FILES Qml/Controllers/ControlsTab.qml
     QML_FILES Qml/Controllers/ChromeBwTab.qml
+    QML_FILES Qml/Controllers/Screenshot.qml
 
     QML_FILES Qml/Vues/ColorsTabForm.ui.qml
     QML_FILES Qml/Vues/ChromeTabForm.ui.qml
@@ -31,7 +36,7 @@ qt_add_qml_module(appUniversalColors
     QML_FILES Qml/Vues/Separator.ui.qml
     QML_FILES Qml/Vues/ColorName.qml
     QML_FILES Qml/Vues/Echantillon.qml
-    QML_FILES Qml/Controllers/Screenshot.qml
+
 )
 
 # Qt for iOS sets MACOSX_BUNDLE_GUI_IDENTIFIER automatically since Qt 6.1.
