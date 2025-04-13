@@ -6,7 +6,7 @@ import "./Controllers"
 
 Window {
     id: window
-    width: 480
+    width: 540
     height: 800
     minimumWidth: 380
     minimumHeight: 600
@@ -46,6 +46,7 @@ Window {
             width: parent.width
             Layout.preferredHeight: 50
             Layout.fillWidth: true
+            Layout.topMargin: 0
 
             TabBar {
                 id: tabBar
@@ -59,6 +60,10 @@ Window {
                 TabButton {
                     id: tabTools
                     text: qsTr("Colors")
+                }
+                TabButton {
+                    id: chromebwtab
+                    text: qsTr("BW")
                 }
                 TabButton {
                     id: chrometab
@@ -79,22 +84,27 @@ Window {
             Layout.fillWidth: true
             currentIndex: tabBar.currentIndex
 
-            // ------------------ Choix du thème -----------------------------
+            // ------------------ Choix du thème ----------------------------
             ThemeTab {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
-            // ------------------ Couleurs du thème ----------------------------
+            // ------------------ Couleurs du thème -------------------------
             ColorsTab {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
-            // ------------------ Couleurs Chrome ----------------------------
+            // ------------------ Couleurs Chrome Fixes ----------------------
+            ChromeBwTab {
+                Layout.fillWidth: true
+                Layout.fillHeight: true
+            }
+            // ------------------ Couleurs Chrome Changeantes -----------------
             ChromeTab {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
-            // ------------------ Controles du thème ----------------------------
+            // ------------------ Controles du thème ---------------------------
             ControlsTab {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
