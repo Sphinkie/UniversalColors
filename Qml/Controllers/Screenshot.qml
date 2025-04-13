@@ -9,7 +9,17 @@ Item {
     Keys.onEnterPressed: takeScreenshot()
     Keys.onReturnPressed: takeScreenshot()
 
+    // -------------------------------------------------
+    // Fait un screenshot de la fenetre principale
+    // -------------------------------------------------
     function takeScreenshot() {
+        mainpage.grabToImage(callbackScr)
+    }
+
+    // -------------------------------------------------
+    // Sauvegarde du screenshot sur disque
+    // -------------------------------------------------
+    function callbackScr(result) {
         // Generate filename
         var filename = tabbedPage.col_bg
         filename += tabbedPage.col_fg
@@ -20,17 +30,13 @@ Item {
         filename += tabBar.currentItem.objectName
         filename += tabbedPage.theme
         filename += tabbedPage.bg
-        filename += ".png"
+        filename += ".jpg"
 
-        // Takescreenshot
-        mainpage.grabToImage(function (result) {
-
-            console.debug("saving " + result.url + " into " + filename)
-            image.source = result.url
-            if (result.saveToFile(filename)) {
-                console.log("screenshot saved")
-            } else
-                console.error("save to file failed")
-        })
+        console.debug("saving " + result.url + " into " + filename)
+        image.source = result.url
+        if (result.saveToFile(filename)) {
+            console.log("screenshot saved")
+        } else
+            console.error("save to file failed")
     }
 }

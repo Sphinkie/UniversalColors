@@ -12,10 +12,8 @@ ThemeTabForm {
     // Les touches du clavier sont forwardées vers le Gestionnaire
     Keys.forwardTo: [screenshot]
 
-    combobox_theme.onActivated: {
-        window.Universal.theme = combobox_theme.currentText
-        tabbedPage.theme = "-" + combobox_theme.currentText.toLowerCase()
-    }
+    // couleur de fond
+    color: Universal.altHighColor
 
     combobox_background.onActivated: {
         console.log(combobox_background.currentText)
@@ -34,6 +32,13 @@ ThemeTabForm {
         tabbedPage.col_fg = combobox_foreground.currentText.substring(0, 2)
     }
 
+    // Pour la page en cours seulement
+    combobox_theme.onActivated: {
+        Universal.theme = combobox_theme.currentText
+        tabbedPage.theme = "-" + combobox_theme.currentText.toLowerCase()
+    }
+
+    // Initialisations
     combobox_background.Component.onCompleted: {
         //combobox_background.currentIndex = indexOfValue(Universal.background)
         combobox_background.currentIndex = 1 // Green

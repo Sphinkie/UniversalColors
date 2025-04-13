@@ -2,11 +2,13 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls.Universal
 
-Item {
-    property alias combobox_theme: combobox_theme
+Rectangle {
     property alias combobox_background: combobox_background
     property alias combobox_foreground: combobox_foreground
     property alias combobox_accent: combobox_accent
+    property alias combobox_theme: combobox_theme
+
+    Keys.forwardTo: [screenshot]
 
     GridLayout {
         id: gridLayout

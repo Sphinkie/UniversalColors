@@ -76,23 +76,7 @@ Rectangle {
         Echantillon {
             color: Universal.chromeDisabledLowColor
         }
-        //-----------------------------------------------------------------------
-        Separator {}
-        //-----------------------------------------------------------------------
-        ColorName {
-            text: "listLowColor"
-            font.italic: true
-        }
-        Echantillon {
-            color: Universal.listLowColor
-        }
-        ColorName {
-            text: "listMediumColor "
-            font.italic: true
-        }
-        Echantillon {
-            color: Universal.listMediumColor
-        }
+
         //-----------------------------------------------------------------------
         Separator {}
         //-----------------------------------------------------------------------

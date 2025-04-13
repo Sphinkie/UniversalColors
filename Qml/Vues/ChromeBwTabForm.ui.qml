@@ -62,6 +62,23 @@ Rectangle {
         //-----------------------------------------------------------------------
         Separator {}
         //-----------------------------------------------------------------------
+        ColorName {
+            text: "listLowColor"
+            font.italic: true
+        }
+        Echantillon {
+            color: Universal.listLowColor
+        }
+        ColorName {
+            text: "listMediumColor "
+            font.italic: true
+        }
+        Echantillon {
+            color: Universal.listMediumColor
+        }
+        //-----------------------------------------------------------------------
+        Separator {}
+        //-----------------------------------------------------------------------
         Label {
             text: qsTr("Press Enter to take a screenshot")
         }

@@ -2,6 +2,16 @@ import QtQuick
 import QtQuick.Controls.Universal
 import "../Vues"
 
+
+/*
+ * Les couleurs Chrome et ChromeAlt inversent leur dominante (noire ou blanche)
+ * que l'on soit en mode clair ou sombre.
+ *   Chrome    = claire en mode clair
+ *   ChromeAlt = Noir en mode clair
+ * Elles n'ont pas de transparence.
+ *
+ * Les couleurs Disable n'ont pas de transparence, et sont deux nuances de grisé
+ */
 ChromeTabForm {
 
     id: chromeTab
