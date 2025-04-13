@@ -1,0 +1,8 @@
+# Fichiers à ne pas mettre dans Git
+
+/build
+/build*
+/Generated
+*.user
+
+Thumbs.db
