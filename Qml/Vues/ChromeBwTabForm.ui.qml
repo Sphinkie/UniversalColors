@@ -63,7 +63,7 @@ Rectangle {
         Separator {}
         //-----------------------------------------------------------------------
         Label {
-            text: qsTr("Press Space to save a screenshot")
+            text: qsTr("Press Enter to take a screenshot")
         }
     }
 }

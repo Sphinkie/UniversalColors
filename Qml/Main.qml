@@ -98,28 +98,23 @@ Window {
                 font.pointSize: 16
                 font.bold: true
                 TabButton {
-                    // id: themetab
                     objectName: "theme"
                     text: "Theme"
                     focus: true
                 }
                 TabButton {
-                    // id: colorstab
                     objectName: "colors"
                     text: "Colors"
                 }
                 TabButton {
-                    // id: chromebwtab
                     objectName: "chromebw"
                     text: "BW"
                 }
                 TabButton {
-                    // id: chrometab
                     objectName: "chrome"
                     text: "Chrome"
                 }
                 TabButton {
-                    // id: controlstab
                     objectName: "controls"
                     text: "Controls"
                 }

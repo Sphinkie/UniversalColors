@@ -6,32 +6,31 @@ import QtQuick
  */
 Item {
 
-    Keys.onDigit0Pressed: event => {
-                              // Generate filename
-                              var filename = tabbedPage.col_bg
-                              filename += tabbedPage.col_fg
-                              filename += tabbedPage.col_ac
-                              filename += "-"
-                              filename += tabbedPage.currentIndex + 1
-                              filename += "-"
-                              filename += tabBar.currentItem.objectName
-                              filename += tabbedPage.theme
-                              filename += tabbedPage.bg
-                              filename += ".png"
+    Keys.onEnterPressed: takeScreenshot()
+    Keys.onReturnPressed: takeScreenshot()
 
-                              // Takescreenshot
-                              mainpage.grabToImage(function (result) {
+    function takeScreenshot() {
+        // Generate filename
+        var filename = tabbedPage.col_bg
+        filename += tabbedPage.col_fg
+        filename += tabbedPage.col_ac
+        filename += "-"
+        filename += tabbedPage.currentIndex + 1
+        filename += "-"
+        filename += tabBar.currentItem.objectName
+        filename += tabbedPage.theme
+        filename += tabbedPage.bg
+        filename += ".png"
 
-                                  console.debug(
-                                              "saving " + result.url + " into " + filename)
-                                  image.source = result.url
-                                  if (result.saveToFile(filename)) {
-                                      console.log("screenshot saved")
-                                  } else
-                                      console.error("save to file failed")
-                              })
-                          }
+        // Takescreenshot
+        mainpage.grabToImage(function (result) {
 
-    // Space ne fonctionne pas !
-    Keys.onSpacePressed: event => console.debug("space pressed")
+            console.debug("saving " + result.url + " into " + filename)
+            image.source = result.url
+            if (result.saveToFile(filename)) {
+                console.log("screenshot saved")
+            } else
+                console.error("save to file failed")
+        })
+    }
 }
