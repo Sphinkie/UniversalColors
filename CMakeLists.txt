@@ -21,12 +21,12 @@ qt_add_qml_module(appUniversalColors
     QML_FILES Qml/Controllers/ChromeTab.qml
     QML_FILES Qml/Controllers/ThemeTab.qml
     QML_FILES Qml/Controllers/ControlsTab.qml
+    QML_FILES Qml/Controllers/ChromeBwTab.qml
 
     QML_FILES Qml/Vues/ColorsTabForm.ui.qml
     QML_FILES Qml/Vues/ChromeTabForm.ui.qml
     QML_FILES Qml/Vues/ThemeTabForm.ui.qml
     QML_FILES Qml/Vues/ControlsTabForm.ui.qml
-    QML_FILES Qml/Controllers/ChromeBwTab.qml
     QML_FILES Qml/Vues/ChromeBwTabForm.ui.qml
     QML_FILES Qml/Vues/Separator.ui.qml
     QML_FILES Qml/Vues/ColorName.qml

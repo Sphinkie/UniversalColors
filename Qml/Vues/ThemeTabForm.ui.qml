@@ -14,14 +14,10 @@ Item {
         anchors.margins: 6
         columns: 2
 
-        Text {
+        ColorName {
             id: lb_backgroud
             text: "Background color"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         ComboBox {
             id: combobox_background
@@ -30,16 +26,11 @@ Item {
             textRole: "text"
             valueRole: "color"
             model: couleurs
-            Component.onCompleted: currentIndex = 1 // Green
         }
-        Text {
+        ColorName {
             id: lb_foreground
             text: "Foreground color"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         ComboBox {
             id: combobox_foreground
@@ -48,16 +39,11 @@ Item {
             textRole: "text"
             valueRole: "value"
             model: couleurs
-            Component.onCompleted: currentIndex = 13 // Amber
         }
-        Text {
+        ColorName {
             id: lb_accent
             text: "Accent Color"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         ComboBox {
             id: combobox_accent
@@ -66,16 +52,11 @@ Item {
             textRole: "text"
             valueRole: "value"
             model: couleurs
-            Component.onCompleted: currentIndex = 12 // Orange
         }
-        Text {
+        ColorName {
             id: lb_theme
             text: "Theme"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         ComboBox {
             id: combobox_theme
@@ -91,13 +72,9 @@ Item {
             Layout.columnSpan: 2
             color: "transparent"
         }
-        Text {
+        ColorName {
             text: "background"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         Rectangle {
             width: 200
@@ -106,13 +83,9 @@ Item {
             color: Universal.background
             Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "foreground"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         Rectangle {
             width: 200
@@ -121,13 +94,9 @@ Item {
             color: Universal.foreground
             Layout.fillWidth: true
         }
-        Text {
+        ColorName {
             text: "accent"
-            font.pixelSize: 12
-            horizontalAlignment: Text.AlignRight
-            verticalAlignment: Text.AlignVCenter
-            rightPadding: 8
-            Layout.fillWidth: true
+			Layout.fillHeight: false
         }
         Rectangle {
             width: 200

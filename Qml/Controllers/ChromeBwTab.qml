@@ -8,12 +8,16 @@ ChromeBwTabForm {
 
     // checkbox: Use Background
     color: checkBox.checked ? Universal.background : Universal.chromeLowColor
+    checkBox.onClicked: tabbedPage.bg = checkBox.checked ? "-bg" : ""
 
-    // Limité à lapage courante et ses enfants
+    // Limité à la page courante et ses enfants
     switchbutton.onClicked: {
-        if (switchbutton.checked)
+        if (switchbutton.checked) {
             Universal.theme = Universal.Dark
-        else
+            tabbedPage.theme = "-dark"
+        } else {
             Universal.theme = Universal.Light
+            tabbedPage.theme = "-light"
+        }
     }
 }
