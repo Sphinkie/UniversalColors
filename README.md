@@ -18,7 +18,9 @@ select the colors of your style and the light or dark mode.
 
 Here you can discover the Base and Alt declinaisons of your background color. These colors invert when you switch from light to dark mode.
 
-![colors in dark mode](Docs/GrAmOr-1-colors-dark.png)
+![colors in light mode](Docs/GrAmOr-1-colors-light.png)
+
+![theme light](Docs/GrAmOr-1-colors-light-bg.png)
 
 ### chrome page
 
