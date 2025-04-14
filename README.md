@@ -16,16 +16,18 @@ select the colors of your style and the light or dark mode.
 
 ### Color page 
 
-Here you can discover the Base and Alt declinaisons of your background color. These colors invert when you switch from light to dark mode.
+Here you can discover the *Base* and *Alt* declinaisons of your background color. These colors invert when you switch from light to dark mode.
 
-![colors in light mode](Docs/GrAmOr-1-colors-light.png)
+![colors in light mode](Docs/GrAmOr-2-colors-light.png)
 
-![theme light](Docs/GrAmOr-1-colors-light-bg.png)
+![colors with background](Docs/GrAmOr-2-colors-light-bg.png)
 
-### chrome page
+### Chrome page
 
-this page displays the chrome and chrome Alt colors.
+This page displays the *Chrome* and *Chrome Alt* colors.
 
+![chrome light](Docs/GrAmOr-3-chrome-light-bg.png)
+![chrome dark](Docs/GrAmOr-3-chrome-dark-bg.png)
 
 ### chrome white and chrome black 
 
