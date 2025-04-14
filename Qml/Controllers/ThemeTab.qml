@@ -9,6 +9,8 @@ import "../Vues"
  */
 ThemeTabForm {
 
+    id: themeTab
+
     // Les touches du clavier sont forwardées vers le Gestionnaire
     Keys.forwardTo: [screenshot]
 
@@ -20,22 +22,26 @@ ThemeTabForm {
         window.Universal.background = combobox_background.currentText
         console.log(Universal.background)
         tabbedPage.col_bg = combobox_background.currentText.substring(0, 2)
+        themeTab.focus = true
     }
 
     combobox_accent.onActivated: {
         window.Universal.accent = combobox_accent.currentText
         tabbedPage.col_ac = combobox_accent.currentText.substring(0, 2)
+        themeTab.focus = true
     }
 
     combobox_foreground.onActivated: {
         window.Universal.foreground = combobox_foreground.currentText
         tabbedPage.col_fg = combobox_foreground.currentText.substring(0, 2)
+        themeTab.focus = true
     }
 
     // Pour la page en cours seulement
     combobox_theme.onActivated: {
         Universal.theme = combobox_theme.currentText
         tabbedPage.theme = "-" + combobox_theme.currentText.toLowerCase()
+        themeTab.focus = true
     }
 
     // Initialisations

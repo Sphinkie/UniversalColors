@@ -6,7 +6,7 @@ import "../Vues"
 /*
  * Les couleurs Chrome et ChromeAlt inversent leur dominante (noire ou blanche)
  * que l'on soit en mode clair ou sombre.
- *   Chrome    = claire en mode clair
+ *   Chrome    = clair en mode clair
  *   ChromeAlt = Noir en mode clair
  * Elles n'ont pas de transparence.
  *

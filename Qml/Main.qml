@@ -91,6 +91,7 @@ Window {
             width: parent.width
             Layout.preferredHeight: 50
             Layout.fillWidth: true
+            focus: true // focus initial
             Keys.forwardTo: [screenshot]
 
             TabBar {
@@ -101,7 +102,6 @@ Window {
                 TabButton {
                     objectName: "theme"
                     text: "Theme"
-                    focus: true
                 }
                 TabButton {
                     objectName: "colors"
