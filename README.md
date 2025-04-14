@@ -8,4 +8,29 @@ If you choose the "Microsoft Universal Style" for your QML application, this uti
 
 ## Screenshots
 
+### theme page
+
+select the colors of your style and the light or dark mode. 
+
+### color Paige 
+
+here you can discover the Base and Alt declinaisons of your background color. these colors invert when you switch from light to dark mode.
+
+
+### chrome page
+
+this page displays the chrome and chrome Alt colors.
+
+
+### chrome white and chrome black 
+
+these colors do not invert.
+chrome white colors stay more or less white, in light mode and dark mode.
+Sale thing for Chrome Black.
+
+### Controls
+
+t he e page displays the quick controls, as they are, from the shelf
+
+
 to be completed...
