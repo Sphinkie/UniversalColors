@@ -29,15 +29,20 @@ This page displays the *Chrome* and *Chrome Alt* colors.
 ![chrome light](Docs/GrAmOr-3-chrome-light-bg.png)
 ![chrome dark](Docs/GrAmOr-3-chrome-dark-bg.png)
 
-### chrome white and chrome black 
+### Chrome White and Chrome Black 
 
-these colors do not invert.
-chrome white colors stay more or less white, in light mode and dark mode.
-Sale thing for Chrome Black.
+These colors do not invert.  
+*Chrome White* colors stay more or less white, in light mode and in dark mode.
+Same thing for *Chrome Black*.
+
+![theme light](Docs/GrAmOr-1-theme-light.png)
+![theme light](Docs/GrAmOr-1-theme-light.png)
+
 
 ### Controls
 
-t he e page displays the quick controls, as they are, from the shelf
+the page displays the QtQuick controls, as they are, from the shelf.
 
 
-to be completed...
+![controls in light mode](Docs/GrAmOr-5-controls-light.png)
+![controls in dark mode](Docs/GrAmOr-5-controls-dark.png)
