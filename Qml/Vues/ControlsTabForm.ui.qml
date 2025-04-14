@@ -29,28 +29,29 @@ Rectangle {
         Text {
             text: "Text"
         }
+        Label {
+            id: label
+            text: "Label"
+        }
         TextEdit {
             id: textEdit
-            text: "Text Edit"
+            text: "Text Edit (mutiple editable lines)"
         }
         TextInput {
             id: textInput
             width: 100
             height: 20
-            text: qsTr("Text Input")
+            text: qsTr("Text Input (editable line)")
             font.pixelSize: 12
-        }
-        Label {
-            id: label
-            text: "Label"
         }
         TextArea {
             id: textArea
-            placeholderText: "Text Area"
+            placeholderText: "Text Area (multi-line)"
         }
         TextField {
             id: textField
-            placeholderText: qsTr("Text Field")
+            placeholderText: "Text Field (single-line)"
+            implicitWidth: 180
         }
         Button {
             id: button_low
@@ -81,6 +82,7 @@ Rectangle {
             Label {
                 text: "Round Button"
                 leftPadding: 12
+                anchors.verticalCenter: parent.verticalCenter
             }
         }
         Row {
@@ -90,6 +92,7 @@ Rectangle {
             Label {
                 text: "Busy Indicator"
                 leftPadding: 12
+                anchors.verticalCenter: parent.verticalCenter
             }
         }
         Row {
