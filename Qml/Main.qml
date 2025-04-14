@@ -41,6 +41,7 @@ Window {
         Pane {
             FontLoader {
                 id: titlefont
+                // source: "qrc:/Fonts/Scideco.otf"
                 // source: "qrc:/Fonts/13_Misa.ttf"
                 // source: "qrc:/Fonts/Hourglass.ttf"
                 // source: "qrc:/Fonts/OrionPax.otf"
@@ -107,12 +108,12 @@ Window {
                     text: "Colors"
                 }
                 TabButton {
-                    objectName: "chromebw"
-                    text: "BW"
-                }
-                TabButton {
                     objectName: "chrome"
                     text: "Chrome"
+                }
+                TabButton {
+                    objectName: "chromebw"
+                    text: "BW"
                 }
                 TabButton {
                     objectName: "controls"
@@ -144,13 +145,13 @@ Window {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
-            // ------------------ Couleurs Chrome Fixes ----------------------
-            ChromeBwTab {
+            // ------------------ Couleurs Chrome Changeantes -----------------
+            ChromeTab {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }
-            // ------------------ Couleurs Chrome Changeantes -----------------
-            ChromeTab {
+            // ------------------ Couleurs Chrome Fixes ----------------------
+            ChromeBwTab {
                 Layout.fillWidth: true
                 Layout.fillHeight: true
             }

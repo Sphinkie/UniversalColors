@@ -2,18 +2,27 @@ import QtQuick
 
 
 /*
- * Gestion du clavier pour faire des screenshots
+ * Gestion du clavier pour faire des screenshots (touche Entrée)
+ * (Touche 0 pour une imagette)
  */
 Item {
 
     Keys.onEnterPressed: takeScreenshot()
     Keys.onReturnPressed: takeScreenshot()
+    Keys.onDigit0Pressed: takeThumbnail()
 
     // -------------------------------------------------
-    // Fait un screenshot de la fenetre principale
+    // Fait un screenshot de la fenêtre principale
     // -------------------------------------------------
     function takeScreenshot() {
         mainpage.grabToImage(callbackScr)
+    }
+
+    // -------------------------------------------------
+    // Fait un petit screenshot (imagette)
+    // -------------------------------------------------
+    function takeThumbnail() {
+        mainpage.grabToImage(callbackScr, Qt.size(135, 200))
     }
 
     // -------------------------------------------------
@@ -30,7 +39,7 @@ Item {
         filename += tabBar.currentItem.objectName
         filename += tabbedPage.theme
         filename += tabbedPage.bg
-        filename += ".jpg"
+        filename += ".png"
 
         console.debug("saving " + result.url + " into " + filename)
         image.source = result.url

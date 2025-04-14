@@ -5,5 +5,6 @@
         <file>Fonts/Hourglass.ttf</file>
         <file>Fonts/Ericsson_GA628.ttf</file>
         <file>Fonts/Vectroid.otf</file>
+        <file>Fonts/Scideco.otf</file>
     </qresource>
 </RCC>

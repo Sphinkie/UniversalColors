@@ -8,8 +8,6 @@ Rectangle {
     property alias combobox_accent: combobox_accent
     property alias combobox_theme: combobox_theme
 
-    Keys.forwardTo: [screenshot]
-
     GridLayout {
         id: gridLayout
         anchors.fill: parent

@@ -18,15 +18,23 @@ If you choose the "Microsoft Universal Style" for your QML application, this uti
 
 Select the colors of your style and the mode: *light* or *dark*. 
 
-![theme light](Docs/GrAmOr-1-theme-light.png)
+![theme light](Docs/thumb/GrAmOr-1-theme-light.png)
+![theme light](Docs/thumb/GrAmOr-1-theme-dark.png)
 
 ### Color page
 
 Here you can discover the *Base* and *Alt* declinaisons of your background color. These colors **invert** when you switch from *light* to *dark* mode.
 
-![colors in light mode](Docs/GrAmOr-2-colors-light.png)
+![colors in light mode](Docs/thumb/GrAmOr-2-colors-light.png)
+![colors with background](Docs/thumb/GrAmOr-2-colors-light-bg.png)
 
-![colors with background](Docs/GrAmOr-2-colors-light-bg.png)
+### Chrome page
+
+This page displays the *Chrome* and *Chrome Alt* colors.  
+These colors **invert** when you switch from *light* to *dark* mode.
+
+![chrome light with background](Docs/thumb/GrAmOr-3-chrome-light-bg.png)
+![chrome dark with background](Docs/thumb/GrAmOr-3-chrome-dark-bg.png)
 
 ### Chrome Black and Chrome White
 
@@ -34,20 +42,12 @@ These colors **do not invert**.
 *Chrome White* colors stay more or less white, in *light* mode and in *dark* mode.
 Same thing for *Chrome Black*.
 
-![theme light](Docs/GrAmOr-3-chromebw-light.png)
-![theme light](Docs/GrAmOr-3-chromebw-dark.png)
-
-### Chrome page
-
-This page displays the *Chrome* and *Chrome Alt* colors.  
-These colors **invert** when you switch from *light* to *dark* mode.
-
-![chrome light](Docs/GrAmOr-4-chrome-light-bg.png)
-![chrome dark](Docs/GrAmOr-4-chrome-dark-bg.png)
+![chrome light](Docs/thumb/GrAmOr-4-chromebw-light.png)
+![chrome dark](Docs/thumb/GrAmOr-4-chromebw-dark.png)
 
 ### Controls
 
 The page displays the QtQuick controls, as they are, from the shelf.
 
-![controls in light mode](Docs/GrAmOr-5-controls-light.png)
-![controls in dark mode](Docs/GrAmOr-5-controls-dark.png)
+![controls in light mode](Docs/thumb/GrAmOr-5-controls-light.png)
+![controls in dark mode](Docs/thumb/GrAmOr-5-controls-dark.png)
