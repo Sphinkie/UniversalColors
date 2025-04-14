@@ -8,13 +8,15 @@ If you choose the "Microsoft Universal Style" for your QML application, this uti
 
 ## Screenshots
 
-### theme page
+### Theme page
 
 select the colors of your style and the light or dark mode. 
 
-### color Paige 
+![theme light](Docs/GrAmOr-1-theme-light.png)
 
-here you can discover the Base and Alt declinaisons of your background color. these colors invert when you switch from light to dark mode.
+### Color page 
+
+Here you can discover the Base and Alt declinaisons of your background color. These colors invert when you switch from light to dark mode.
 
 
 ### chrome page
