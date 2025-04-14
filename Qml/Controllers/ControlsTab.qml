@@ -11,15 +11,15 @@ ControlsTabForm {
 
     // checkbox: Use Background
     color: checkBox.checked ? Universal.background : Universal.chromeLowColor
-    checkBox.onClicked: tabbedPage.bg = checkBox.checked ? "-bg" : ""
+    checkBox.onClicked: controlsButton.bg = checkBox.checked ? "-bg" : ""
 
     switchbutton.onClicked: {
         if (switchbutton.checked) {
             Universal.theme = Universal.Dark
-            tabbedPage.theme = "-dark"
+            controlsButton.theme = "-dark"
         } else {
             Universal.theme = Universal.Light
-            tabbedPage.theme = "-light"
+            controlsButton.theme = "-light"
         }
     }
 }

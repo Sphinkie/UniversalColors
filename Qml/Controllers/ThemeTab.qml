@@ -21,26 +21,26 @@ ThemeTabForm {
         console.log(combobox_background.currentText)
         window.Universal.background = combobox_background.currentText
         console.log(Universal.background)
-        tabbedPage.col_bg = combobox_background.currentText.substring(0, 2)
+        tabBar.col_bg = combobox_background.currentText.substring(0, 2)
         themeTab.focus = true
     }
 
     combobox_accent.onActivated: {
         window.Universal.accent = combobox_accent.currentText
-        tabbedPage.col_ac = combobox_accent.currentText.substring(0, 2)
+        tabBar.col_ac = combobox_accent.currentText.substring(0, 2)
         themeTab.focus = true
     }
 
     combobox_foreground.onActivated: {
         window.Universal.foreground = combobox_foreground.currentText
-        tabbedPage.col_fg = combobox_foreground.currentText.substring(0, 2)
+        tabBar.col_fg = combobox_foreground.currentText.substring(0, 2)
         themeTab.focus = true
     }
 
     // Pour la page en cours seulement
     combobox_theme.onActivated: {
         Universal.theme = combobox_theme.currentText
-        tabbedPage.theme = "-" + combobox_theme.currentText.toLowerCase()
+        themeButton.theme = "-" + combobox_theme.currentText.toLowerCase()
         themeTab.focus = true
     }
 
@@ -48,22 +48,22 @@ ThemeTabForm {
     combobox_background.Component.onCompleted: {
         //combobox_background.currentIndex = indexOfValue(Universal.background)
         combobox_background.currentIndex = 1 // Green
-        tabbedPage.col_bg = combobox_background.currentText.substring(0, 2)
+        tabBar.col_bg = combobox_background.currentText.substring(0, 2)
     }
 
     combobox_foreground.Component.onCompleted: {
         combobox_foreground.currentIndex = 13 // Amber
-        tabbedPage.col_fg = combobox_foreground.currentText.substring(0, 2)
+        tabBar.col_fg = combobox_foreground.currentText.substring(0, 2)
     }
 
     combobox_accent.Component.onCompleted: {
         combobox_accent.currentIndex = 12 // Orange
-        tabbedPage.col_ac = combobox_accent.currentText.substring(0, 2)
+        tabBar.col_ac = combobox_accent.currentText.substring(0, 2)
     }
 
     combobox_theme.Component.onCompleted: {
         combobox_theme.currentIndex = 0 // Light
-        tabbedPage.theme = "-" + combobox_theme.currentText.toLowerCase()
+        themeButton.theme = "-" + combobox_theme.currentText.toLowerCase()
     }
 
     ListModel {

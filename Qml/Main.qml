@@ -99,25 +99,44 @@ Window {
                 width: parent.width
                 font.pointSize: 16
                 font.bold: true
+                property string col_bg: ""
+                property string col_fg: ""
+                property string col_ac: ""
+
                 TabButton {
+                    id: themeButton
                     objectName: "theme"
                     text: "Theme"
+                    property string bg: ""
+                    property string theme: "-light"
                 }
                 TabButton {
+                    id: colorsButton
                     objectName: "colors"
                     text: "Colors"
+                    property string bg: ""
+                    property string theme: "-light"
                 }
                 TabButton {
+                    id: chromeButton
                     objectName: "chrome"
                     text: "Chrome"
+                    property string bg: ""
+                    property string theme: "-light"
                 }
                 TabButton {
+                    id: chromebwButton
                     objectName: "chromebw"
                     text: "BW"
+                    property string bg: ""
+                    property string theme: "-light"
                 }
                 TabButton {
+                    id: controlsButton
                     objectName: "controls"
                     text: "Controls"
+                    property string bg: ""
+                    property string theme: "-light"
                 }
             }
         }
@@ -126,11 +145,6 @@ Window {
         // ----------------------------------------------------------------
         StackLayout {
             id: tabbedPage
-            property string col_bg: ""
-            property string col_fg: ""
-            property string col_ac: ""
-            property string theme: "-light"
-            property string bg: ""
             Layout.fillHeight: true
             Layout.fillWidth: true
             currentIndex: tabBar.currentIndex

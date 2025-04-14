@@ -30,15 +30,15 @@ Item {
     // -------------------------------------------------
     function callbackScr(result) {
         // Generate filename
-        var filename = tabbedPage.col_bg
-        filename += tabbedPage.col_fg
-        filename += tabbedPage.col_ac
+        var filename = tabBar.col_bg
+        filename += tabBar.col_fg
+        filename += tabBar.col_ac
         filename += "-"
-        filename += tabbedPage.currentIndex + 1
+        filename += tabBar.currentIndex + 1
         filename += "-"
         filename += tabBar.currentItem.objectName
-        filename += tabbedPage.theme
-        filename += tabbedPage.bg
+        filename += tabBar.currentItem.theme
+        filename += tabBar.currentItem.bg
         filename += ".png"
 
         console.debug("saving " + result.url + " into " + filename)
