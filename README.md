@@ -2,9 +2,9 @@
 
 ## Description
 
-This utility is dedicated for C++ application development, using QML and Qt framework.
+QML Universal Colors is an utility dedicated to C++ application development, using Qt framework and QML.
 
-If you choose the "Microsoft Universal Style" for your QML application, this utility will helpfully display the main colors (background, foreground and accentuated), the derived colors (darker and lighter) and the *controls* appearence (buttons, sliders...).
+If you choose the "Microsoft Universal" *Style* for your QML application, this utility will helpfully display the main colors (background, foreground and accentuated), the derived colors (darker and lighter) and the *controls* appearence (buttons, sliders...).
 
 ---
 

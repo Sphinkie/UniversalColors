@@ -3,6 +3,7 @@
 /build
 /build*
 /Generated
+/Dist
 *.user
 
 Thumbs.db
