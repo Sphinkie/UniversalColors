@@ -1,13 +1,9 @@
 @echo Run me in Qt Creator terminal .. "run environnement"
 
-windeployqt --release --compiler-runtime --no-translations --libdir .\Dist --dir .\Dist\UniversalColors --qmldir .\Qml  .\build\Desktop_Qt_6_6_1_MSVC2019_64bit-Release\UniversalColors.exe
+windeployqt --release --compiler-runtime --no-translations --libdir .\dist\UniversalColors --dir .\dist\UniversalColors --qmldir .\Qml  .\build\Desktop_Qt_6_6_1_MSVC2019_64bit-Release\UniversalColors.exe
 
-copy .\build\Desktop_Qt_6_6_1_MSVC2019_64bit-Release\UniversalColors.exe .\Dist\UniversalColors
+copy .\build\Desktop_Qt_6_6_1_MSVC2019_64bit-Release\UniversalColors.exe .\dist\UniversalColors
 
-@echo Copie des DLL manquantes
-xcopy .\build\Desktop_Qt_6_6_1_MSVC2019_64bit-Release\qml  .\Dist\UniversalColors\qml /Q /Y /S
-@echo Copier aussi Qt6QuickControls2.dll
-@echo Copier aussi Qt6QuickLayouts.dll
 @echo.
 @echo OFF
 
@@ -19,6 +15,7 @@ REM  --plugindir <path>        Copy plugins to path.
 REM  --release                 Assume release binaries.
 REM  --pdb                     Deploy .pdb files (informations de débogage pour les exécutables Windows).
 REM  --compiler-runtime        Deploy compiler runtime (for Windows apps).
+REM  --qmldir <path-to-app-qml-files>  Use this option if your app uses QtQuick
 REM
 REM ARGUMENT:
 REM  [files]                   Binaries or directory containing the binary
