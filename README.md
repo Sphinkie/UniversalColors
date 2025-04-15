@@ -33,8 +33,8 @@ Here you can discover the *Base* and *Alt* declinaisons of your background color
 This page displays the *Chrome* and *Chrome Alt* colors.  
 These colors **invert** when you switch from *light* to *dark* mode.
 
-![chrome light with background](Docs/thumb/GrAmOr-3-chrome-light-bg.png)
-![chrome dark with background](Docs/thumb/GrAmOr-3-chrome-dark-bg.png)
+![chrome light with background](Docs/thumb/GrAmOr-3-chrome-light.png)
+![chrome dark with background](Docs/thumb/GrAmOr-3-chrome-dark.png)
 
 ### Chrome Black and Chrome White
 
@@ -42,8 +42,8 @@ These colors **do not invert**.
 *Chrome White* colors stay more or less white, in *light* mode and in *dark* mode.
 Same thing for *Chrome Black*.
 
-![chrome light](Docs/thumb/GrAmOr-4-chromebw-light.png)
-![chrome dark](Docs/thumb/GrAmOr-4-chromebw-dark.png)
+![chrome light](Docs/thumb/GrAmOr-4-chromebw-light-bg.png)
+![chrome dark](Docs/thumb/GrAmOr-4-chromebw-dark-bg.png)
 
 ### Controls
 
